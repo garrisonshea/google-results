@@ -1,0 +1,481 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+a:link {
+	text-decoration: none;
+	color: #1A0DB8;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.block {
+	display: block;
+}
+
+/* ==========================================================================
+   Header Styles 
+   ========================================================================== */
+
+	/* ==========================================================================
+   Logo and Search Form
+   ========================================================================== */   
+	header {
+		background: #f1f1f1;
+		height: 60px;
+		border-bottom: 1px solid #ddd;
+		width: 100%;
+	}
+
+	#header-wrapper {
+		display: inline-block;
+		width: 70%;
+		vertical-align: middle;
+	}
+
+	.logo {
+		height: 45px;
+		width: 120px;
+		display: inline;
+		padding: 15px 15px 0 15px;
+		margin: 0 3px 0 0;
+	}
+
+	#searchbar {
+		display: inline-block;
+		width: 70%;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		vertical-align: middle;
+	}
+
+	input[type=search] {
+		display: inline-block;
+		margin-bottom: 20px;
+		padding: 5px 30px 5px 10px;
+		width: 82%;
+		height: 40px;
+		box-shadow: none;
+		border: 1px solid #ddd;
+		border-right: 1px solid #4D90FE;
+	}
+
+	input[type=search]:focus {
+		outline: 0;
+		border: 1px solid #4D90FE;
+	} 
+
+	#microphone {
+		position: absolute;
+		bottom: 28px;
+		right: 132px;
+		width: 25px;
+		height: 25px;
+	}
+
+	.submit {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		background: #3F7FE9;
+		border: 1px solid #3F7FE9;
+		border-radius: 0 3px 3px 0;
+		color: #fff;
+	}
+
+	.submit img {
+		height: 30px;
+		width: 30px;
+		padding: 5px;
+		margin: 4px 4px 4px 2px;
+	}
+
+	/* ==========================================================================
+   Navigation Styles
+   ========================================================================== */
+
+	#navigation-wrapper {
+		display: inline-block;
+		width: 30%;
+		float: right;
+	}
+
+	nav {
+		display: inline-block;
+		float: right;
+		padding: 5px 20px 0;
+	}
+
+	nav a:link {
+		display: inline-block;
+		padding: 10px 10px;
+		vertical-align: middle;
+		color: #666;
+		font-size: .8rem;
+	}
+
+	nav a:hover {
+		text-decoration: underline;
+	}
+
+	.opacity {
+		opacity: .8;
+	}
+
+	.opacity:hover {
+		opacity: 1;
+	}
+
+	#profile {
+		height: 30px;
+		width: 30px;
+		border-radius: 100%;
+	}
+
+
+/* ==========================================================================
+Main Results Section
+========================================================================== */ 
+   
+
+   /* ==========================================================================
+   Search Tools
+   ========================================================================== */ 
+
+
+	main {
+		width: 100%;
+	}
+
+	main div:first-child {
+		height: 60px;
+	}
+
+	.search-tools-wrapper {
+		padding: 20px 0 20px 130px;
+		border-bottom: 1px solid #ddd;
+	}
+
+	.search-tools-wrapper a {
+		color: #999;
+		font-size: .8rem;
+		padding: 20px 15px;
+	}
+
+	.search-tools-wrapper a:hover {
+		color: #000;
+	}
+
+	a.active {
+		font-weight: bold;
+		color: #4D90FE;
+		border-bottom: 3px solid #4D90FE;
+	}
+
+	.search-tools-wrapper a.button {
+		padding: 5px 10px;
+		margin: 0;
+		border: 1px solid #fff;
+	}
+
+	.search-tools-wrapper .button:hover {
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		background: linear-gradient(to top, #eee, #f3f3f3, #f5f5f5);
+	}
+
+	/* ==========================================================================
+   Preview from Ties.com
+   ========================================================================== */ 
+   .main-wrapper {
+	   	width: 40%;
+	   	margin: 0 0 0 130px;
+   }
+
+   .lighter {
+   		color: #888;
+   		font-size: .8rem;
+   		padding: 5px 0 5px 20px;
+   }
+
+   .preview {
+   		width: 100%;
+   		position: relative;
+		-webkit-box-shadow: 0px 0px 8px 1px rgba(187,187,187,1);
+		-moz-box-shadow: 0px 0px 8px 1px rgba(187,187,187,1);
+		box-shadow: 0px 0px 8px 1px rgba(187,187,187,1);
+   }
+
+   .preview p.bold {
+   		margin: 0;
+   		padding: 20px 0 10px 20px;
+   }
+
+   .preview ol {
+	   	width: 60%;
+	   	display: inline-block;
+	   	margin: 0;
+	   	padding-top: 0;
+   }
+
+   .preview li p {
+   		margin: 0;
+   		padding: 2.5px;
+   }
+
+   .preview li:last-child {
+   		list-style: none;
+   		color: #888;
+   		font-weight: lighter;
+   		font-size: .9rem;
+   		padding: 10px 0 0 5px;
+   }
+
+   .preview img {
+   		position: absolute;
+   		top: 0;
+   		right: 0;
+   }
+
+   .preview a.block {
+   		padding: 30px 0 0 20px;
+   }
+
+   .preview .url {
+   		margin: 0;
+   		padding: 0 0 20px 20px;
+   		color: #006621;
+   		font-size: .9rem;
+   }
+
+   .feedback {
+   		padding: 5px 0 0;
+   		margin: 0;
+   		text-align: right;
+   		font-style: italic;
+   		font-size: 0.7rem;
+   }
+
+   .feedback a {
+   		color: #888;
+   }
+
+	   /* ==========================================================================
+	   Main Linked Results
+	   ========================================================================== */ 
+   		.image-preview {
+   			width: 100%;
+   			padding: 20px 0 30px;
+   		}
+
+   		.image-preview a:first-child {
+   			font-size: 1.1rem;
+   		}
+
+   		a.report {
+   			float: right;
+   			display: inline-block;
+   			color: #888;
+   			font-size: .8rem;
+   			padding-right: 20px;
+   		}
+
+   		.images img {
+   			width: 110px;
+   			height: 90px;
+   		}
+
+   		.line-break {
+   			padding-bottom: 20px;
+   			border-bottom: 1px solid #eee;
+   		}
+
+   		.capitalize {
+   			border-bottom: 1px solid #ddd;
+   			padding-bottom: 15px;
+   		}
+
+   		.capitalize a p {
+			text-transform: capitalize;
+			font-size: 1.1rem;
+			margin: 0;
+			padding: 0;
+		}
+
+   		.green-link {
+   			color: #3F6621;
+   		}
+
+   		.green-link,
+   		.description {
+   			font-size: .9rem;
+   			padding: 1px 0 0;
+   			margin: 0;
+   		}
+
+   		.description {
+   			padding-bottom: 20px;
+   			font-size: .8rem;
+   			color: #555;
+   		}
+
+   		.youtube {
+   			display: inline-block;
+   			line-height: 1.3;
+   		}
+
+   		.youtube-container {
+   			display: inline-block;
+   			margin: 0;
+   			padding: 0 0 0 4px;
+   			width: 60%;
+   		}
+
+
+	/* ==========================================================================
+	Related Searches
+	========================================================================== */
+		.related-search {
+			width: 80%;
+			padding-bottom: 20px;
+		}
+
+		.related-search p:first-child {
+			color: #777;
+		}
+
+		.right, 
+		.left {
+			display: inline-block;
+			font-size: .8rem;
+			padding: 0 15px 0 0;
+		}
+
+		.related-search ul {
+			list-style: none;
+		}
+
+		.related-search ul,
+		.related-search li {
+			padding: 0;
+			margin: 0;
+		}
+
+		.related-search li {
+			padding: 5px 0;
+		}
+
+
+	/* ==========================================================================
+	Pagination
+	========================================================================== */
+		.pagination {
+			width: 100%;
+			margin: 0 auto 50px;
+			padding: 30px 0 0 130px;
+			/*margin: 0 0 0 130px;*/
+			border-top: 1px solid #ddd;
+		}
+
+		.pagination a:link {
+			color: #4285F4;
+			font-size: .8rem;
+		}
+		
+		.pagination ul {
+			list-style: none;
+			/*padding: 0 0 0 128px;*/
+			margin: 0;
+		}
+
+		.pagination li {
+			display: inline-block;
+			padding: 0 8px 0 0;
+		}
+
+		.pagination-logo {
+			/*padding: 50px 0 0 90px;*/
+			margin: 0 auto;
+			display: inline-block;
+		}
+
+		.pagination li:last-child {
+			padding-left: 40px;
+		}
+
+
+
+/* ==========================================================================
+Footer
+========================================================================== */
+footer {
+	height: 110px;
+	background: #F2F2F2;
+	display: block;
+	padding: 0;
+	margin: 0;
+	font-size: .8rem;
+	border-top: 1px solid #ddd;
+	padding: 30px 0 0 130px;
+}
+
+footer .circle {
+	display: inline-block;
+	background: #9e9e9e;
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
+}
+
+footer p {
+	margin: 0;
+	padding: 0 0 25px;
+	color: #9e9e9e;
+	display: inline-block;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+footer li {
+	display: inline-block;
+}
+
+footer a:link {
+	color: #777;
+	padding: 0 5px;
+}
+
+footer ul a:link {
+	padding: 0 20px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
